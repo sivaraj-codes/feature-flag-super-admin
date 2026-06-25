@@ -1,0 +1,98 @@
+.header {
+    height: var(--nav-height);
+    background-color: #0f1117;
+    border-bottom: 1px solid #1e2130;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.navWrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ── Brand ── */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.logo {
+    font-size: 1.2rem;
+    color: #6366f1;
+}
+
+.appName {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #e2e8f0;
+    letter-spacing: 0.02em;
+}
+
+.badge {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: #6366f1;
+    background-color: #1e1f3b;
+    border: 1px solid #3b3d6b;
+    border-radius: 4px;
+    padding: 2px 7px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* ── Nav ── */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.navLink {
+    font-size: 0.875rem;
+    color: #94a3b8;
+    text-decoration: none;
+    padding: 0.35rem 0.85rem;
+    border-radius: 6px;
+    transition: color 0.15s, background-color 0.15s;
+}
+
+.navLink:hover {
+    color: #e2e8f0;
+    background-color: #1e2130;
+}
+
+/* ── User area ── */
+.userArea {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.userEmail {
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.logoutBtn {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    background: none;
+    border: 1px solid #2d3148;
+    border-radius: 6px;
+    padding: 0.3rem 0.85rem;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s, background-color 0.15s;
+}
+
+.logoutBtn:hover {
+    color: #f87171;
+    border-color: #f87171;
+    background-color: #1f1212;
+}

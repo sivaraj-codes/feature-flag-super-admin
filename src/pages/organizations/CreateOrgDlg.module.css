@@ -1,0 +1,26 @@
+.formGroup {
+    margin-bottom: var(--sp-4);
+}
+
+.formGroup label {
+    display: block;
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--clr-text-dim);
+    margin-bottom: var(--sp-2);
+}
+
+.radioGroup {
+    display: flex;
+    gap: var(--sp-6);
+    margin-top: var(--sp-2);
+}
+
+.radioLabel {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    font-size: var(--text-sm);
+    color: var(--clr-text);
+    cursor: pointer;
+}

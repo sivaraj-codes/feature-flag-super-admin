@@ -1,0 +1,104 @@
+:root,
+[data-theme="dark"] {
+    /* Colors */
+    --clr-bg: #0f1117;
+    --clr-surface: #1a1d27;
+    --clr-surface-2: #222635;
+    --clr-surface-3: #2a2e40;
+    --clr-border: #2e3347;
+    --clr-primary: #6366f1;
+    --clr-primary-h: #4f52d9;
+    --clr-primary-dim: rgba(99, 102, 241, 0.12);
+    --clr-success: #22c55e;
+    --clr-danger: #ef4444;
+    --clr-warning: #f59e0b;
+    --clr-text: #e2e8f0;
+    --clr-text-muted: #64748b;
+    --clr-text-dim: #94a3b8;
+    --shadow-md: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.5);
+
+    /* Typography */
+    --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", "Cascadia Code", "Segoe UI Mono", Consolas, "Roboto Mono", monospace;
+
+    --text-xs: 0.75rem;
+    /* 12px */
+    --text-sm: 0.875rem;
+    /* 14px */
+    --text-base: 1rem;
+    /* 16px */
+    --text-lg: 1.125rem;
+    /* 18px */
+    --text-xl: 1.25rem;
+    /* 20px */
+    --text-2xl: 1.5rem;
+    /* 24px */
+
+    /* Layout */
+    --max-width: 1100px;
+    --nav-height: 56px;
+
+    /* Spacing — use these for padding/margin/gap */
+    --sp-1: 0.25rem;
+    /* 4px  */
+    --sp-2: 0.5rem;
+    /* 8px  */
+    --sp-3: 0.75rem;
+    /* 12px */
+    --sp-4: 1rem;
+    /* 16px */
+    --sp-5: 1.25rem;
+    /* 20px */
+    --sp-6: 1.5rem;
+    /* 24px */
+    --sp-8: 2rem;
+    /* 32px */
+    --sp-10: 2.5rem;
+    /* 40px */
+
+    /* Border Radius */
+    --radius-sm: 0.375rem;
+    /* 6px  */
+    --radius-md: 0.625rem;
+    /* 10px */
+    --radius-lg: 1rem;
+    /* 16px */
+    --radius-full: 9999px;
+
+    /* Transition */
+    --transition: 150ms ease;
+}
+
+[data-theme="light"] {
+    /* Colors */
+    --clr-bg: #f8fafc;
+    --clr-surface: #ffffff;
+    --clr-surface-2: #f1f5f9;
+    --clr-surface-3: #e2e8f0;
+    --clr-border: #dbe2ea;
+    --clr-primary: #6366f1;
+    --clr-primary-h: #4f52d9;
+    --clr-primary-dim: rgba(99, 102, 241, 0.10);
+    --clr-success: #16a34a;
+    --clr-danger: #dc2626;
+    --clr-warning: #d97706;
+    --clr-text: #0f1117;
+    --clr-text-muted: #94a3b8;
+    --clr-text-dim: #475569;
+    --shadow-md: 0 0.25rem 1.5rem rgba(15, 17, 23, 0.10);
+}
+
+body {
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    color: var(--clr-text);
+    background: var(--clr-bg);
+    line-height: 1.5;
+}
+
+code,
+pre,
+kbd,
+.mono {
+    font-family: var(--font-mono);
+}
