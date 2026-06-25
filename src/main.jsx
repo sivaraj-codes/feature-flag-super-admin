@@ -8,8 +8,9 @@ import App from "./App.jsx";
 
 import "./styles/reset.css";
 import "./styles/index.css";
-import "primeicons/primeicons.css";
-import "primereact/resources/themes/lara-light-blue/theme.css";
+import "primereact/resources/themes/lara-light-blue/theme.css"; // theme
+import "primereact/resources/primereact.min.css"; // core styles
+import "primeicons/primeicons.css"; // icons
 
 export const queryClient = new QueryClient({
   defaultOptions: {
@@ -31,5 +32,5 @@ createRoot(document.getElementById("root")).render(
       </ErrorBoundary>
       <ToastContainer position="top-right" theme="dark" autoClose={2000} />
     </QueryClientProvider>
-  </BrowserRouter>
+  </BrowserRouter>,
 );

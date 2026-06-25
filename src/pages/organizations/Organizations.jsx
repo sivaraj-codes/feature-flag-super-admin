@@ -57,7 +57,7 @@ export const Organizations = () => {
         // }
         className="p-datatable-lg"
       >
-        <Column field="name" header="Organization Name" sortable />
+        <Column field="name" header="Organization Name" sortable frozen />
         <Column header="Status" body={statusTemplate} />
         <Column field="establishedYear" header="Established Year" sortable />
       </DataTable>
