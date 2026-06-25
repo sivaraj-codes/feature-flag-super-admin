@@ -195,17 +195,10 @@
     margin-bottom: 1rem;
 }
 
-/* nativeDialog */
-dialog {
-    background: var(--clr-surface);
-    border: 1px solid var(--clr-border);
-    border-radius: var(--radius-lg);
-    padding: var(--sp-6);
-    color: var(--clr-text);
-    width: min(90vw, 28rem);
-}
 
-dialog::backdrop {
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(2px);
+
+.p-datatable {
+    padding: 0.5rem;
+    border: 2px solid var(--clr-border);
+    border-radius: var(--radius-sm);
 }
