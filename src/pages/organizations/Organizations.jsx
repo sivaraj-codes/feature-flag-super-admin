@@ -51,10 +51,8 @@ export const Organizations = () => {
         rowHover
         paginator
         rows={10}
-        // rowsPerPageOptions={[10, 20, 50]}
-        // paginatorTemplate={
-        //   "FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown"
-        // }
+        paginatorTemplate="PrevPageLink PageLinks NextPageLink RowsPerPageDropdown"
+        rowsPerPageOptions={[10, 25, 50, 100]}
         className="p-datatable-lg"
       >
         <Column field="name" header="Organization Name" sortable frozen />
