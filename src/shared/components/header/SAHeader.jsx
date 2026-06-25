@@ -32,7 +32,7 @@ const SAHeader = () => {
       </nav> */}
 
         <div className={styles.userArea}>
-          <span className={styles.userEmail}>{user?.email}</span>
+          {/* <span className={styles.userEmail}>{user?.email}</span> */}
           <button className={styles.logoutBtn} onClick={handleLogout}>
             Logout
           </button>
