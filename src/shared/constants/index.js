@@ -3,3 +3,5 @@ export const USER_ROLES = {
   OA: "OA",
   EU: "EU",
 };
+
+export const PUBLIC_PATHS = ["/login"];

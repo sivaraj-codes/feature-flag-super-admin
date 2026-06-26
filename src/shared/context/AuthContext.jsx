@@ -1,6 +1,7 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../../lib/axiosInstance";
+import { PUBLIC_PATHS } from "../constants";
 
 const AuthContext = createContext(null);
 
@@ -10,6 +11,10 @@ export const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    if (PUBLIC_PATHS.includes(window.location.pathname)) {
+      setLoading(false);
+      return;
+    }
     api
       .get("/auth/me")
       .then((res) => setUser(res.data.data?.user ?? null))
