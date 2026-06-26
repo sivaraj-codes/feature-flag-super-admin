@@ -10,7 +10,6 @@ api.interceptors.response.use(
   (res) => res,
   (err) => {
     const message = err.response?.data?.message || "Something went wrong";
-    // Don't redirect on /auth/me 401 — AuthContext handles it
     if (
       err.response?.status === 401 &&
       !PUBLIC_PATHS.includes(window.location.pathname) &&

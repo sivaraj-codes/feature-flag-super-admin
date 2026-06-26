@@ -8,9 +8,9 @@ import App from "./App.jsx";
 
 import "./styles/reset.css";
 import "./styles/index.css";
-import "primereact/resources/themes/lara-light-blue/theme.css"; // theme
-import "primereact/resources/primereact.min.css"; // core styles
-import "primeicons/primeicons.css"; // icons
+import "primereact/resources/themes/lara-light-blue/theme.css";
+import "primereact/resources/primereact.min.css";
+import "primeicons/primeicons.css";
 
 export const queryClient = new QueryClient({
   defaultOptions: {
